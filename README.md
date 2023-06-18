@@ -68,7 +68,7 @@ export default [
 					return attrs.type === 'text/babel' ? 'babel.js' : outputFile;
 				},
 				modifyContent: (content, attrs, {inputFile, inputFiles, inputPattern, outputFile, outputFiles, outerHTML, startTag, source, normalizePath}) => {
-					if (normalizePath(inputFile).include('/test')) {
+					if (normalizePath(inputFile).includes('/test')) {
 						// Any `content` that is `false` will be skipped/ignored in the output
 						return false;
 					}
