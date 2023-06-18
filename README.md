@@ -27,7 +27,7 @@ yarn add rollup-import-tags --dev
 ```javascript
 import babel from '@rollup/plugin-babel';
 import brotli from 'rollup-plugin-brotli';
-import importTags from './../rollup-import-tags/index.js';
+import importTags from 'rollup-import-tags';
 import resolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
 

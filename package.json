@@ -1,6 +1,6 @@
 {
 	"name": "rollup-import-tags",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A Rollup JS plugin for importing code blocks from files and adding them to the bundle",
 	"main": "index.js",
 	"type": "module",
