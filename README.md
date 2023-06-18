@@ -1,6 +1,6 @@
 # Import Tags Rollup Plugin
 
-`rollup-import-tags` is a Rollup.js plugin that allows you to import code blocks from arbitrary, user defined, tags in your files, similar to the functionality provided by `gulp-tags-to-files` for Gulp.js. It parses files, looking for specified tags (like `<script>`), then extracts the contents and then creates new chunks for each of these code blocks.
+`rollup-plugin-import-tags` is a Rollup.js plugin that allows you to import code blocks from arbitrary, user defined, tags in your files, similar to the functionality provided by `gulp-tags-to-files` for Gulp.js. It parses files, looking for specified tags (like `<script>`), then extracts the contents and then creates new chunks for each of these code blocks.
 
 The plugin is highly configurable, allowing you to specify which tags to scan, include/exclude files based on a pattern, and apply additional transformations to the code blocks.
 
@@ -13,13 +13,13 @@ Another unique feature of the plugin is the ability to wrap the extracted code i
 You can install the plugin via npm or Yarn:
 
 ```shell
-npm install rollup-import-tags --save-dev
+npm install rollup-plugin-import-tags --save-dev
 ```
 
 or
 
 ```shell
-yarn add rollup-import-tags --dev
+yarn add rollup-plugin-import-tags --dev
 ```
 
 ## Example Usage
@@ -27,7 +27,7 @@ yarn add rollup-import-tags --dev
 ```javascript
 import babel from '@rollup/plugin-babel';
 import brotli from 'rollup-plugin-brotli';
-import importTags from 'rollup-import-tags';
+import importTags from 'rollup-plugin-import-tags';
 import resolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
 

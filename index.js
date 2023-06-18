@@ -29,7 +29,7 @@ export default function importTags(options = {}) {
 	let chunks = {};
 
 	return {
-		name: 'rollup-import-tags',
+		name: 'rollup-plugin-import-tags',
 
 		async options(opts) {
 			opts.input ||= []
